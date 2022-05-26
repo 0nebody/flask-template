@@ -14,7 +14,7 @@ docker-compose up
 
 ## Local Development
 
-The API and website code is mounted as a volume to the container so changes will be reflected on the website.
+The API and website code is mounted as a volume to the container. Changes made to code should be reflected on the website without a rebuild.
 
 ### Urls
 
