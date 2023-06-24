@@ -7,4 +7,4 @@ graceful_timeout = 120
 timeout = 120
 keepalive = 5
 threads = 3
-reloase = "True"
+reload = "True"
