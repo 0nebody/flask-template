@@ -1,0 +1,23 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+    <h1>{% block title %} Add User {% endblock %}</h1>
+
+    {% for message in get_flashed_messages() %}
+        <div class="alert">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post">
+        <div class="form">
+            <label for="email">Enter email address: </label>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div class="form">
+            <label for="password">Enter your password: </label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="form">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+{% endblock %}

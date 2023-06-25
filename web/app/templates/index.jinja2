@@ -1,0 +1,24 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+    <h1>{% block title %} User App {% endblock %}</h1>
+
+    <h2>Users</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Active</th>
+            <th>Data</th>
+        </tr>
+    {% for user in users %}
+        <tr>
+            <td>{{ user['id'] }}</td>
+            <td>{{ user['email'] }}</td>
+            <td>{{ user['is_active'] }}</td>
+            <td>{{ user['items'] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <h3><a href="add">Add User</a></h3>
+{% endblock %}
